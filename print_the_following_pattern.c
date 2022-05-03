@@ -1,7 +1,8 @@
 #include<stdio.h>
+#include<math.h>
 int main()
 {
-    int n,i,j,k,z=1;
+    int n,i,j,k,z=1,s=0;
     scanf("%d",&n);
     for(i=1;i<=n;i++)
     {
@@ -11,7 +12,7 @@ int main()
         }
         for(k=1;k<=z;k++)
         {
-            printf("%d",i);
+            printf("%d",abs(k-i));
         }
         z+=2;
         printf("
