@@ -2,7 +2,7 @@
 #include<math.h>
 int prime(int n)
 {
-    int i,j,a,b,m=300,c,x,y;
+    int i,j,a,b,m=3000,c,x,y;
     for (i=1;i<=n;i++)
 {
     c=0;
