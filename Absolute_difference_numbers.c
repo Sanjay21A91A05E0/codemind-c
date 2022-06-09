@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int a,n,d,ra=0,rl=0,rf=0,te,t,r=0;
+    scanf("%d%d",&a,&n);
+    te=a;
+    t=n;
+    while(n)
+    {
+        d=a%10;
+        rl=rl*10+d;
+        a/=10;
+        n--;
+    }
+    a=te;
+    while(a)
+    {
+        d=a%10;
+        ra=ra*10+d;
+        a/=10;
+    }
+    n=t;
+    while(n)
+    {
+        d=ra%10;
+        rf=rf*10+d;
+        ra/=10;
+        n--;
+    }
+    while(rl)
+    {
+        d=rl%10;
+        r=r*10+d;
+        rl/=10;
+    }
+    printf("%d",abs(r-rf));
+}
